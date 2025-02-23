@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="align-items: center;">
+    <h1 style="text-align: center;">show all articles : </h1>
+    <% for( let art of articles ) { %>
+        <div style="background-color: rgb(167, 119, 212);width: 400px;height:130px;margin-left: 200px;">
+            <h4 style="padding: 5px;margin: 0;text-align: center;"><%= art.title %></h4><br>
+            <h5 style="padding: 5px;margin: 0;text-align: center;"><%= art.body %></h5><br>
+            <button type="text" style="padding: 5px;margin: 0;margin-left: 30px;background-color: blueviolet;border: none;"><%= art.numberslikes %></button><hr>
+        </div>
+    <% } %>
+
+</body>
+</html>
